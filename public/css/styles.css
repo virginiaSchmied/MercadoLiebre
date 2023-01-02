@@ -1,0 +1,448 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+
+div.top-header {
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header {
+  background-color: #eac926;
+}
+
+header div.logo {
+  padding: 10px;
+  width: 50%;
+  animation: grow 2s ease-out 1 alternate;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+header nav {
+  font-size: 12px;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header .form {
+  width: 50%;
+}
+
+header .form .input {
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+}
+
+header .form .submit {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #666;
+  width: 10%;
+}
+
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
+  background-color: #0055aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+  transition:all 650ms;
+}
+
+div.burger-menu i:hover{
+  width: 50px;
+  height: 50px;
+  background-color:#0022aa;
+}
+
+article div.main-article {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+}
+
+.price {
+  width: 30%;
+  font-size: 18px;
+  position:relative;
+  right: 5%;
+}
+
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.description {
+  color: #666;
+}
+
+.description{
+  display: none;
+  margin-top: 20px;
+}
+
+section.banner img {
+  width: 100%;
+  transition: all 650ms;
+}
+
+section.banner img:hover{
+-webkit-transform:scale(1.05);transform:scale(1.05);
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section article {
+  background-color: #fff;
+  margin: 15px 0px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding:10px;
+  transition: all 650ms;
+}
+
+main section article:hover {
+-webkit-transform:scale(1.05);transform:scale(1.05);
+}
+
+main section article img {
+  width: 100%;
+}
+
+main section article .discount {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 70px;
+  background-color: #FFF;
+  color: #39b54a;
+  position: relative;
+  left: 30%;
+}
+
+.price {
+  width: 30%;
+  font-size: 18px;
+}
+
+main section article i{
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  color: #39b54a;
+}
+
+.truck-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: transform 1s;
+}
+
+.truck-icon:hover{
+  transform: rotateZ(270deg);
+}
+
+main section h3{
+  margin: 20px 0px;
+}
+
+header ul {
+  margin-bottom: 16px;
+}
+
+main.login form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 60px;
+}
+
+main.login form #txfUser:invalid {
+  border: 1px solid rgb(75, 2, 2);
+}
+
+main.login form #txfUser{
+  width: 70%;
+  border-radius: 20px;
+  color:#666;
+  height: 30px;
+  text-align: center;
+  transition: all 650ms;
+}
+
+main.login form #txfPassword:hover, main.login form #txfUser:hover{
+  width: 80%;
+}
+
+main.login form #txfPassword{
+  width: 70%;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 650ms;
+}
+
+main.login form .loginbutton{
+  width: 70%;
+  font-size: 20px;
+  color:#FFF;
+  border-radius: 20px;
+  background-color:#0055AA;
+  transition: background-color 650ms;
+}
+
+main.login form .loginbutton:hover{
+  background-color:#0022AA;
+}
+
+main.login form #txfPassword:invalid {
+  border: 1px solid rgb(75, 2, 2);
+}
+
+main .login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main .register {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 60px;
+}
+.register .input {
+  width: 70%;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+  transition: all 650ms;
+}
+
+.register .input:hover {
+  width: 80%;
+  height: 40px;
+}
+
+main .profile, h5 {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  color:rgb(78, 77, 77);
+}
+
+main .interests  {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 60px;
+}
+
+.buttons .sendbutton:hover{
+background-color: #0022AA;
+}
+
+.buttons .sendbutton {
+width: 70%;
+font-size: 20px;
+color:#FFF;
+border-radius: 20px;
+background-color:#0055AA;
+transition: background-color 650ms;
+}
+
+.deletebutton{
+width: 70%;
+font-size: 20px;
+color:#ebebeb;
+border-radius: 20px;
+background-color:#666;
+transition: background-color 650ms;
+}
+
+.deletebutton:hover{
+  background-color:rgb(75, 74, 74)
+}
+
+footer .caracteries {
+  background-color: #FFF;
+  text-align: center;
+  padding: 30px;
+}
+
+footer h6 {
+  padding: 20px;
+}
+
+footer .copyright {
+  background-color: #FFF;
+}
+
+.fa-credit-card, .fa-gift, .fa-user-shield{
+  color:#0044aa;
+  transition: color 650ms;
+}
+
+.fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover{
+  color: #39b54a;
+}
+
+
+@media (min-width: 378px){
+  main section article .description{
+      display: block;
+  }
+
+  main section article{
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  main section .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 16px;
+    justify-content: center;
+  }
+
+  main section .products article {
+    width: 48%;
+  }
+
+  footer .caracteries {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 802px) {
+  main section .products article {
+    width: 23%;
+  }
+
+  header div.logo {
+    width: 30%;
+  }
+
+  header .form {
+    width: 30%;
+  }
+
+  header div.top-header p {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  header nav {
+    display: flex;
+  }
+  header nav ul {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  
+  header nav ul:nth-child(1) {
+    padding-left: 64px;
+  }
+
+  header nav ul:nth-child(2) {
+    justify-content: flex-end;
+    padding-right: 64px;
+  }
+
+  div.burger-menu {
+    display: none;
+  }
+
+  footer .caracteries{
+    display:flex;
+    flex-direction: row;
+  padding: 50px;
+    }
+}
