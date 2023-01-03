@@ -124,8 +124,7 @@ article div.main-article {
   font-weight: normal;
 }
 
-h3,
-.description {
+h3{
   color: #666;
 }
 
@@ -160,6 +159,15 @@ main section article {
 
 main section article:hover {
 -webkit-transform:scale(1.05);transform:scale(1.05);
+}
+
+main section article .description{
+  color: #fff;
+  transition: color 650ms;
+}
+
+main section article .description:hover{
+  color:#666
 }
 
 main section article img {
